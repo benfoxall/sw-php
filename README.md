@@ -15,7 +15,7 @@ Talk: Service Workers for PHP developers
 * why workers were created, how they work
 * how service workers compare to this
 
-* can be spun up independantly, so allows network proxy & offline
+* can be spun up independently, so allows network proxy & offline
 * can intercept any request, allows reformatting potential
 * doesn't rely on page being there, paves way for push notifications
 * allows for background sync
