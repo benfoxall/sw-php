@@ -9,7 +9,10 @@
 ---
 
 # Pusher
-#### We make it easy to add realtime features to your sites and applications
+
+## We make it easy to add realtime functionality to your sites/apps
+
+### ex. Connecting small buttons to slide decks
 
 
 ---
@@ -17,14 +20,26 @@
 # JSOxford
 
 ---
+
+# Web development:
+
+### Backend - _Responding to http requests_
+
+### Frontend - _Making http requests_
+
+
 <!--
+
+# JSOxford
+
+---
+
 # JSOxford :boom: PHPOxford
 
---- -->
+---
 
 # JSOxford ❤️ PHPOxford
 
-<!--
 ---
 
 > We’re excited to be joining forces with @JSOxford for this month’s meetup. No left-pad jokes, people 🙂
@@ -35,7 +50,7 @@
 
 ---
 
-# Web Pages
+# Webpages
 
 ---
 
@@ -57,6 +72,16 @@
 
 ![fit](slides/Service Worker2.png)
 
+^ It doesn't require a page to be loaded
+^ It doesn't require access to a server
+
+
+---
+
+### [fit] Service workers: kind of a backend thing
+
+* no direct access to ui
+* _responds to http requests_
 
 <!--
 
@@ -102,6 +127,8 @@ navigator.serviceWorker.register('/service-worker.js')
 
 ^ Offline support
 
+^ Advanced caching strategies - if you request a, request and cache b, c, d
+
 ^ custom cache warming when a user logs in.
 
 ^ A user logs out, we can expire all the content
@@ -116,9 +143,21 @@ navigator.serviceWorker.register('/service-worker.js')
 
 ## Periodic background sync
 
+^ **Without the page even being there**
+
+^ request this data sometime when the user is on wifi
+
 ---
 
 ## Push notifications
+
+^ homescreen notifications - allows new way of interacting with users
+
+---
+
+# …Or, not
+
+^ Perfect example of progressive enhancement - because it's intercepting requests, non-supporting browsers just defer to working like normal
 
 ---
 
@@ -155,6 +194,6 @@ navigator.serviceWorker.register('/service-worker.js')
 
 # [fit] Ben Foxall
 
-### @benjaminbenben
+### @benjaminbenben
 
 ### @pusher
