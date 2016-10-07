@@ -173,7 +173,16 @@ navigator.serviceWorker.register('/service-worker.js')
 
 ---
 
+### [We're holding this party for you]
+### [Fight for the right to party]
+
+
+<!---
+
 ## Once registered, our frontend code doesn't have to know a Service Worker exists
+
+
+
 
 ^ progressive enhancement
 
