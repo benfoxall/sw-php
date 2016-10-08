@@ -27,19 +27,17 @@
 
         <h3><span class="fragment">ex.</span> <span class="fragment">Connecting small buttons </span> <span class="fragment">to slide decks</span></h3>
       </section>
-      <section>
+      <!--section>
         <h1>Oxford</h1>
         <h1 class="fragment">JSOxford</h1>
         <h1 class="fragment">PHPOxford</h1>
         <h1 class="fragment">PJHSPOxford</h1>
+      </section-->
+      <section>
+        <h1>Service Workers</h1>
       </section>
       <section>
-        <h1>Web development</h1>
-        <h2>Backend - <em>Responding to http requests</em></h2>
-        <h2>Frontend - <em>Making http requests</em></h2>
-      </section>
-      <section>
-        <h1>Web pages</h1>
+        <h3>…a <em>quick</em> history</h3>
       </section>
       <section id="workers">
         <div class="sw-d">
@@ -66,17 +64,27 @@ worker.addEventListener('message',
       </section>
 
       <section>
+        <h2>Some kind of frontend thing?</h2>
+      </section>
+
+      <section>
+        <h1>'ends</h1>
+        <h2>Backend - <em>Responding to http requests</em></h2>
+        <h2>Frontend - <em>Making http requests</em></h2>
+      </section>
+
+      <section>
         <h2>Service workers respond to http requests</h2>
-        <h3>Kind of like a backend</h3>
+        <h3>Backend functionality in the browser</h3>
       </section>
 
       <section>
-        <h1>This changes the web</h1>
+        <h1>Also, this changes the web</h1>
       </section>
 
       <section>
-        <h1>Responding</h1>
-        <h2>to network requests</h2>
+        <h1>Serving</h1>
+        <h2>network requests</h2>
         <pre class="sw"><code>self.addEventListener('fetch', e => …</code></pre>
       </section>
 
@@ -86,21 +94,21 @@ worker.addEventListener('message',
         <pre class="sw"><code>self.addEventListener('sync', e => …</code></pre>
       </section>
 
-      <section>
+      <!--section>
         <h1>Periodic Sync*</h1>
         <h2>Request when the time is right</h2>
         <pre class="sw"><code>self.addEventListener('sync', e => …</code></pre>
-      </section>
+      </section-->
 
       <section>
         <h1>Push notifications</h1>
-        <h2>Initiate interaction</h2>
+        <h2>initiate user interaction</h2>
         <pre class="sw"><code>self.addEventListener('push', e => …</code></pre>
       </section>
 
 
       <section>
-        <h1>Or, not</h1>
+        <h1>Progressively</h1>
         <pre class="sw"><code>if('serviceWorker' in navigator)</code></pre>
       </section>
 

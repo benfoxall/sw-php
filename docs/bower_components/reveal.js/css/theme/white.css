@@ -1,4 +1,8 @@
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+/*@import url(../../lib/font/source-sans-pro/source-sans-pro.css);*/
+
+/* https://github.com/hakimel/reveal.js/issues/1386 */
+html { background-color: white !important; }
+
 /**
  * White theme for reveal.js. This is the opposite of the 'black' theme.
  *
