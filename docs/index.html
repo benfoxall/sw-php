@@ -71,34 +71,60 @@ worker.addEventListener('message',
       </section>
 
       <section>
-        <h1>What Service Worker allows</h1>
+        <h1>This changes the web</h1>
       </section>
 
       <section>
-        <h1>Intercepting</h1>
-        <h2>network requests</h2>
-        <pre class="sw"><code>self.on('fetch', e => …</code></pre>
+        <h1>Responding</h1>
+        <h2>to network requests</h2>
+        <pre class="sw"><code>self.addEventListener('fetch', e => …</code></pre>
       </section>
 
       <section>
-        <h1>Scheduling</h1>
-        <h2>requests for later</h2>
-        <pre class="sw"><code>self.on('fetch', e => …</code></pre>
+        <h1>Background Sync</h1>
+        <h2>send requests later</h2>
+        <pre class="sw"><code>self.addEventListener('sync', e => …</code></pre>
       </section>
 
       <section>
-        <h1>Periodicly Scheduling</h1>
+        <h1>Periodic Sync*</h1>
         <h2>Request when the time is right</h2>
-        <pre class="sw"><code>self.on('fetch', e => …</code></pre>
+        <pre class="sw"><code>self.addEventListener('sync', e => …</code></pre>
       </section>
 
       <section>
         <h1>Push notifications</h1>
         <h2>Initiate interaction</h2>
-        <pre class="sw"><code>self.on('fetch', e => …</code></pre>
+        <pre class="sw"><code>self.addEventListener('push', e => …</code></pre>
       </section>
 
 
+      <section>
+        <h1>Or, not</h1>
+        <pre class="sw"><code>if('serviceWorker' in navigator)</code></pre>
+      </section>
+
+      <section>
+        <h1>Parties</h1>
+      </section>
+
+      <section>
+        <h2>Frontend</h2>
+      </section>
+
+      <section>
+        <h2>Backend</h2>
+      </section>
+
+      <section>
+        <h2>Lets all party together</h2>
+      </section>
+
+      <section>
+        <h1>Thanks!</h1>
+        <h2>Ben Foxall</h2>
+        <h2>@benjaminbenben</h2>
+      </section>
 
 
     </div>
@@ -107,8 +133,6 @@ worker.addEventListener('message',
   <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
   <script src="bower_components/reveal.js/js/reveal.js"></script>
   <script src="js/dynamic_slide.js"></script>
-
-  <script src="https://js.pusher.com/3.2/pusher.min.js"></script>
   <script>
     Reveal.initialize({
       controls: false,
@@ -172,10 +196,10 @@ worker.addEventListener('message',
       }
     ])
 
+  </script>
 
-
-
-
+  <script src="https://js.pusher.com/3.2/pusher.min.js"></script>
+  <script>
     // enable my clicker thing
     new Pusher('54502d3fdda908d3e634', { cluster: 'eu', encrypted: true })
     .subscribe('bens-flic')
