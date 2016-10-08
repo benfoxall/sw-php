@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Timing</title>
+  <title>SW for Parties</title>
 
   <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
   <link rel="stylesheet" href="bower_components/reveal.js/css/theme/white.css">
@@ -212,7 +212,7 @@ worker.addEventListener('message',
     // enable my clicker thing
     new Pusher('54502d3fdda908d3e634', { cluster: 'eu', encrypted: true })
     .subscribe('bens-flic')
-    .bind('press', Reveal.next)
+    .bind('press', Reveal.navigateNext)
 
   </script>
 </body>
